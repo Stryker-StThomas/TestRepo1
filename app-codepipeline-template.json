@@ -482,7 +482,7 @@
                 "ServiceRole": { "Fn::GetAtt": [ "AppBuildRole", "Arn" ] },
                 "Source": {
                     "Type": "CODEPIPELINE",
-                    "BuildSpec" : "testspec.yml"
+                    "BuildSpec" : "unitspec.yml"
                 }
             }
         },

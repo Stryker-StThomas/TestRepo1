@@ -12,9 +12,4 @@ phases:
       - pytest
   build:
     commands:
-      - echo No build during this phase
-
-artifacts:
-  files:
-    - '**/*'
-  name: python-app-$(date +%y%m%d%H%M).zip
+      - echo No build during this phase, and no artifacts produced
