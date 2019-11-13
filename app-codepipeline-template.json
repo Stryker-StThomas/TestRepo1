@@ -700,7 +700,7 @@
                         ]
                     },
                     {
-                        "Name": "Test",
+                        "Name": "UnitTest",
                         "Actions": [
                             {
                                 "Name": "BuildSource",
