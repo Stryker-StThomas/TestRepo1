@@ -1,0 +1,20 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      python: 3.7
+  pre_build:
+    commands:
+      - echo Test the python application.
+      - pip install -r requirements.txt
+      - flake8 app.py
+      - pytest
+  build:
+    commands:
+      - echo No build during this phase
+
+artifacts:
+  files:
+    - '**/*'
+  name: python-app-$(date +%y%m%d%H%M).zip
