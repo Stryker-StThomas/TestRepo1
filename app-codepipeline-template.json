@@ -717,12 +717,7 @@
                                 },
                                 "Configuration": {
                                     "ProjectName": {"Ref": "AppTestProject"}
-                                },
-                                "OutputArtifacts": [
-                                    {
-                                        "Name": "CodeArtifact2"
-                                    }
-                                ]
+                                }
                             }
                         ]
                     },
