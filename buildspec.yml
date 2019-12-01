@@ -1,12 +1,17 @@
+
 version: 0.2
 
 phases:
   install:
     runtime-versions:
       nodejs: 10
+      python: 3.7
   pre_build:
     commands:
-      - echo Will not test the application in the build phase
+      - echo "BUILD_TYPE = $BUILD_TYPE"
+      - echo Test the python application.
+      - pip install -r requirements.txt
+      - pytest
   build:
     commands:
       - echo Build the CSS using less.
